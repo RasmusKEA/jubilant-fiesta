@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create User</title>
+	<style>
+		form {
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 20px;
+			background: #f2f2f2;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type=text], input[type=password], select {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+		}
+		input[type=submit] {
+			background: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+			width: 100%;
+		}
+		input[type=submit]:hover {
+			background: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="firstName">First Name</label>
+		<input type="text" id="firstName" name="firstName">
+
+		<label for="lastName">Last Name</label>
+		<input type="text" id="lastName" name="lastName">
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email">
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password">
+
+		<label for="group">Group</label>
+		<select id="group" name="group">
+			<option value="groupId1">Group 1</option>
+			<option value="groupId2">Group 2</option>
+			<option value="groupId3">Group 3</option>
+		</select>
+
+		<input type="submit" value="Create User">
+	</form>
+
+	<script src="https://sdk.okta.com/auth-js/1.20.0/okta-auth-js.min.js"></script>
+	<script src="./createUser.js"></script>
+</body>
+</html>
